@@ -58,7 +58,6 @@ client.on("message", message => {
         giphy.random('funny dogs', function (err, res) {
 
             let dog = dogoTeam[Math.floor(Math.random() * dogoTeam.length)];;
-            console.log(res.data);
             message.channel.send({
                 embed: {
                     color: 3447003,
