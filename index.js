@@ -52,7 +52,7 @@ client.on("message", message => {
     }
 
     //==============================GIF DE DOG=================================>
-    if (message.content.startsWith(prefix + "chosedogo")) {
+    if (message.content.startsWith(prefix + "chosedoggo")) {
         let dogoTeam = ['<@310088962595225610>', '<@434488582422528010>', '<@131413017827999744>', '<@239855037902225409>', '<@310086739060326401>']
 
         giphy.random('funny dogs', function (err, res) {
@@ -70,7 +70,7 @@ client.on("message", message => {
         });
     }
 
-    if (message.content.startsWith(prefix + "gigadogo")) {
+    if (message.content.startsWith(prefix + "gigadoggo")) {
         message.channel.send({
             embed: {
                 color: 3447003,
