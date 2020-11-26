@@ -88,6 +88,20 @@ client.on("message", message => {
             }
         });
     }
+
+    if (message.content.startsWith(prefix + "bronze")) {
+        giphy.random('monkey', function (err, res) {
+            message.channel.send({
+                embed: {
+                    color: 3447003,
+                    description: 'Bronze IV',
+                    "image": {
+                        url: res.data.image_original_url
+                    }
+                }
+            });
+        });
+    }
 });
 
 client.login("NzgwMTI0OTQ0Nzk3MjcwMDM2.X7qh-A.h-PvTCskdzWnZPdKkbHQHK18A24");
