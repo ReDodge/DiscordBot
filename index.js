@@ -46,7 +46,7 @@ client.on("message", message => {
         }
 
     }
-    //==========================NON ADMIN=======================================>    
+    //==========================PING TEAM=======================================>
     if (message.content.startsWith(prefix + "meute")) {
         message.channel.send('<@310088962595225610> <@434488582422528010> <@131413017827999744> <@239855037902225409> <@310086739060326401> BARK??');
     }
@@ -67,6 +67,25 @@ client.on("message", message => {
                     }
                 }
             });
+        });
+    }
+
+    if (message.content.startsWith(prefix + "gigadogo")) {
+        message.channel.send({
+            embed: {
+                color: 3447003,
+                "image": {
+                    url: 'https://scontent-mrs2-2.xx.fbcdn.net/v/t1.0-9/13901427_1755703991366416_2216458651599072391_n.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=9OIzj0qzEHoAX_b3Ak1&_nc_oc=AQnVXstjPoLYSnugGyQ9FcaxNlPVlbNJAaJ8lBuQNMQPt0fTCbwRgmMzO4N3Iz5KOho&_nc_ht=scontent-mrs2-2.xx&oh=251027dbeb5b15aaf57f7daf3c1e39af&oe=5FE3E2A4'
+                }
+            }
+        });
+        message.channel.send({
+            embed: {
+                color: 3447003,
+                "image": {
+                    url: 'https://scontent-mrs2-2.xx.fbcdn.net/v/t1.0-9/13876509_1755703978033084_3468558668610640521_n.jpg?_nc_cat=107&ccb=2&_nc_sid=8bfeb9&_nc_ohc=V18_-lOwarIAX9VKbCl&_nc_ht=scontent-mrs2-2.xx&oh=b43a8800f07127cd0ea85d3fb8feb9d0&oe=5FE413D2'
+                }
+            }
         });
     }
 });
